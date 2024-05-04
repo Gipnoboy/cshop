@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fFind));
             tbDate = new TextBox();
             tbCust = new TextBox();
             tbItem = new TextBox();
@@ -107,6 +108,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "fFind";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Find a document";
